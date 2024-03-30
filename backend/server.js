@@ -27,16 +27,3 @@ const PORT = 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
-
-
-app.delete('/',async(req,res)=>
-{
-  try {
-      await userModel.deleteMany({})
-      await eventModel.deleteMany({})
-
-  } catch (error) {
-    
-  }
-})
