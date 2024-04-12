@@ -14,8 +14,9 @@ app.use('/api/auth',authRoutes)
 app.use('/api/event',eventRoutes)
 
 
+
 mongoose
-  .connect("mongodb://localhost:27017/eventDB")
+  .connect("mongodb+srv://karanrajeshirke11:ANRka83x4rJxTuhq@cluster0.kyfgan5.mongodb.net/mern-task?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     console.log("Connected to MongoDB");
   })
